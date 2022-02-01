@@ -36,10 +36,12 @@ for j in Jobs:
     temp = j.find_all('li')
     desc = remove_rn(temp[-2].text).split(':')[-1]
     skills = remove_rn(temp[-1].text).split(':')[-1].split(',')
+    link = j.find('h2').a["href"]
     print(f'''
     Company Name: {name}
     Skills Required: {remove_rn_lst(skills)}
     Job Description: {desc[0:len(desc)-len("... More Details")]}.
+    Link: {link}
     {post}
     ''')
     
