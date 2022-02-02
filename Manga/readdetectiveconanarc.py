@@ -1,5 +1,3 @@
-from pyexpat import features
-import site
 import requests as r
 from bs4 import BeautifulSoup
 
