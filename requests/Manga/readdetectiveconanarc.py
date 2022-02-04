@@ -13,8 +13,8 @@ Link = Link[0:len(Link)-1]
 Edition = int(Link.split('-')[-1])
 
 soup = BeautifulSoup( r.get(Link).text , features="lxml")
-
-ImageLink = soup.find('img', alt="Read Detective Conan Chapter 1086 - Page 1 For Free In The Highest Quality")["data-lazy-src"]
+Myalt = "Read Detective Conan Chapter " + str(Edition)+" - Page 1 For Free In The Highest Quality"
+ImageLink = soup.find('img', alt=Myalt)["data-lazy-src"]
 
 print(f'''
 New Manga #{Edition}
