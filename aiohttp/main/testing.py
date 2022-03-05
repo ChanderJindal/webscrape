@@ -1,5 +1,5 @@
 #this is for Episode.py call testing
-import Episode as e
+import EpManga as e
 import asyncio
 
 if __name__ == "__main__":
