@@ -1,19 +1,23 @@
 import aiohttp
 import asyncio
+import json
 
 async def main():
 
     async with aiohttp.ClientSession() as session:
-        async with session.get('http://python.org') as response:
+        async with session.get('https://gogoanime.film/category/detective-conan') as response:
 
-            print("Status:", response.status)
-            print("Content-type:", response.headers['content-type'])
+           ## print("Status:", response.status)
+           ## print("Content-type:", response.headers['content-type'])
 
-            html = str(response.text)
+            #html = str(response.text)
+            json_data = await response.text()
+            json_data = json.dumps(json_data)
+            print(json_data)
             #print(json_data)
-            with open('text.txt', 'w', encoding='utf-8') as f:
-                f.write(html)
-                f.close()
+            with open('html_data.txt', 'w', encoding='utf-8') as f:
+               f.write(json_data)
+               f.close()
 
 async def main2():
     async with aiohttp.ClientSession() as session:
@@ -22,4 +26,4 @@ async def main2():
             print(await resp.text())
 
 loop = asyncio.get_event_loop()
-loop.run_until_complete(main2())
+loop.run_until_complete(main())
