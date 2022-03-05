@@ -1,4 +1,3 @@
-from os import sep
 from bs4 import BeautifulSoup as BS
 import aiohttp
 import asyncio
