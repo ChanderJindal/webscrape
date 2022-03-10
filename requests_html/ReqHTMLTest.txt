@@ -1,0 +1,663 @@
+var PWT = {}; var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; var gptRan = false; PWT.jsLoaded = function () { loadGpt(); }; (function() { var purl = window.location.href; var url = '//ads.pubmatic.com/AdServer/js/pwt/158141/1400'; var profileVersionId = ''; if (purl.indexOf('pwtv=') > 0) { var regexp = /pwtv=(.*?)(&|$)/g; var matches = regexp.exec(purl); if (matches.length >= 2 && matches[1].length > 0) { profileVersionId = '/' + matches[1]; } } var wtads = document.createElement('script'); wtads.async = true; wtads.type = 'text/javascript'; wtads.src = url + profileVersionId + '/pwt.js'; var node = document.getElementsByTagName('script')[0]; node.parentNode.insertBefore(wtads, node); })(); var loadGpt = function () { // Check the gptRan flag if (!gptRan) { gptRan = true; var gads = document.createElement('script'); var useSSL = 'https:' == document.location.protocol; gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js'; var node = document.getElementsByTagName('script')[0]; node.parentNode.insertBefore(gads, node); } } // Failsafe to call gpt setTimeout(loadGpt, 500); function initAdserver(forced) { if((forced === true && window.initAdserverFlag !== true) || (PWT.a9_BidsReceived && PWT.ow_BidsReceived)){ window.initAdserverFlag = true; PWT.a9_BidsReceived = PWT.ow_BidsReceived = false; googletag.pubads().refresh(); } }
+Zee News: Latest News, Live Breaking News, Today News, India Political News Updates
+window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-2069755-1');
+.adv-block2 { margin: auto; max-width: 970px; margin-top: 10px;} .zeev-time-l { position: absolute; bottom: 4px; left: 4px; background-color: rgba(0, 0, 0, .8); color: #FFF; padding: 0px 6px; font-size: 12px; line-height: 20px; font-family: arial; } .zeev-time { position: absolute;bottom: 10px;right: 10px;background-color: rgba(0, 0, 0, .8);color: #FFF;padding: 0px 6px;font-size: 13px;line-height: 24px; } .zeetagpage .section-article img { width: auto; float: none; margin-right: auto; } .tagstoryimg-block { position: relative; width: 426px; float: left; margin-right: 20px; } .tagstoryimg-block:hover .mid-vd-icon { opacity: 1; transition-duration: 1s; } .m-play-h{position:absolute;bottom:4px;left:4px;} .zeev-time-h{position:absolute;bottom:4px;right:4px;background-color: rgba(0, 0, 0, .8);color:#FFF;padding:0px 6px;font-size:12px;line-height:20px;font-family:arial;} body {margin: 0;font-family: 'Roboto Slab',serif;font-size: 15px;color: #333;background-color: #fff;overflow-x: unset !important;} .mega-menu-scroll {position: fixed;width: 100%;z-index: 9998;top: 55px;} .mega-menu {display: none;background: #000;padding: 10px;width: 100%;} h1, h2, h3, h4, p {margin: 0;padding: 0;line-height: normal;} .nav-f-block{background:#000;width:14%;padding:5px 0 5px 28px;float:left;height:55px} .nav-s-block{width:72%;float:left;padding:0 10px;height:55px;position:relative} .nav-t-block{width:14%;float:left} .col{float:left;width:14%;border-right:0 solid red} .col-state{width:30%!important} .sub-navigation{max-width:1366px;margin:auto;margin-bottom:0px;padding:10px 0} .sub-navigation ul{margin:0 0 20px;padding:0;list-style:none;padding-left:8px} .sub-navigation ul li{margin:0 0 5px;padding:0} .sub-navigation ul li a{color:#FFF} .sub-navigation a{font-size:13px} .sub-heading{margin:0 0 10px;padding:5px 10px;background:#343434;display:inline-block;color:#FFF} header,footer{font-family:'Roboto',sans-serif!important} .search{width:100%;position:relative;display:none;margin-top:5px} .input-search{float:left;width:100%;outline:none;border:0;border-radius:6px;padding:0 10px;z-index:1;box-sizing:border-box;font-size:16px;background:#cb111f;outline:none;color:#FFF;height:45px} .searchButton{position:absolute;right:0;width:80px;height:45px;background:#cb111f;text-align:center;color:#fff;border-radius:6px;cursor:pointer;font-size:16px;border:0;outline:none} .lang-section{background:#ededed;text-align:center;padding:5px 0;line-height:22px} .lang-section a{color:#535353;font-size:12px} .lang-section span{color:#535353;font-size:9px;vertical-align:middle} .lang-section span::after{content:"|";padding:0 8px} .lang-section span{color:#535353;font-size:9px} .text-center{text-align:center} .margin-auto{margin:auto} .top-ad{padding:5px 0} .social-block li:first-child{width:30px} .n-state{column-count:2} .nav-s-block a{color:#fff;font-size:12px;text-transform:capitalize;display:block;position:relative;text-decoration:none;height:55px;-webkit-transition:background .2s linear;-moz-transition:background .2s linear;-ms-transition:background .2s linear;-o-transition:background .2s linear;transition:background .2s linear;font-weight:700} .red-navigation{background:#e21727;height:55px;position:relative;z-index:9999;max-width:1366px;margin:auto} .head-bottom.page-header.fixed:before,.head-bottom:before{background:#000;height:55px;content:" ";width:50%;position:absolute;left:0;overflow:hidden;z-index:99} .head-bottom.page-header.fixed:after,.head-bottom:after{background:#e21727;height:55px;content:" ";width:100%;position:absolute;left:0;overflow:hidden;z-index:9;margin-top:-55px;border:1px solid red;visibility:inherit} .search-click{background:transparent;border:0;color:#FFF;font-size:16px;outline:none;padding:0} #nav-icon{width:22px;height:15px;position:relative;display:inline-table;vertical-align:middle;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;transition:.5s ease-in-out;cursor:pointer} #nav-icon span:nth-child(1){top:0} #nav-icon span:nth-child(2){top:7px} #nav-icon span:nth-child(3){top:14px} #nav-icon span{display:block;position:absolute;height:1px;width:100%;background:#fff;opacity:1;left:0;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out} .c-red{color:#e21828!important} .c-icon{margin-right:5px} .red-star{color:red!important;font-size:13px!important;vertical-align:super} .social-block{text-align:inherit} .social-block li{padding:16px 6px} .pd10{padding-top:10px} .navigation.desktop-menu-open,.top-footer{max-width:1366px;margin:auto} .top-footer{padding:10px 15px;border-top:1px solid #202020} .top-footer a{font-size:13px;color:#818181;vertical-align:bottom} .top-footer span{padding:0 10px;font-size:20px;color:#4f4f4f} /*video play button css */ .zeenewsvidicon{background:#fe0000;border-radius: 6px;padding:4px 10px 5px 28px; color:#fff; position: absolute;bottom: 10px;right: 10px;line-height: normal;} .zeenewsvidicon::before{content:''; width:0px;height:0px;border-top: 7px solid transparent;border-bottom: 7px solid transparent;border-left: 11px solid #fff;position: absolute;top: 50%;transform: translateY(-50%);left: 9px;} @media (min-width: 1220px) and (max-width: 1362px) { .nav-s-block a{padding:20px 12px} } @media (min-width: 1180px) and (max-width: 1361px) { .nav-s-block a{padding:20px 14px} } @media (max-width: 1075px) { .nav-none3{display:none} } @media (max-width: 1180px) { .nav-none{display:none} .nav-s-block a{padding:20px 12px} } @media (min-width: 1363px) { .nav-s-block a{padding:20px 12px} } @media (min-width: 965px) and (max-width: 1150px) { .nav-f-block{width:16%} .nav-s-block{width:64%} .nav-t-block{width:20%} } @media (min-width: 768px) and (max-width: 964px) { .nav-s-block a{padding:20px 8px} .nav-none4{display:none} .nav-f-block{width:22%} .nav-s-block{width:55%} .nav-t-block{width:22%} } .zee-l{background:url(https://english.cdn.zeenews.com/images/logo/zeenewslogo_favico_32x32.png) no-repeat center center!important} .nav-reprt{padding:12px 0 12px 8px !important} .social-block {text-align: inherit;list-style: none;padding: 0;text-align: center;} .center-section {max-width: 1346px;margin: 20px auto 50px;} .red-navigation{overflow:hidden} ul.breadcrumb {padding: 0;list-style: none;font-size: 11px;color: #a6a6a6;margin-top: 0;} a{text-decoration:none;} ul.breadcrumb li { display: inline; } ul.breadcrumb li a { color: #a6a6a6; text-decoration: none; } ul.breadcrumb li + li::before { content: "»"; padding: 4px; } .article-heading { font-size: 38px; color: #191c20; line-height: normal; margin-bottom: 20px!important; } .article-tag-link a { color: #e21727; } .article-tag-link { margin: 5px 0px; padding: 0px; font-size: 14px; font-weight: 700; text-transform: uppercase; } .article-head-block p { font-size: 18px; color: #444; line-height: 26px; }
+html{overflow-x: hidden;}
+var qazy_image = "https://english.cdn.zeenews.com/images/spacer.gif"; (function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/39319/adRecover.js?ts=1564116778088'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);
+.bn-breaking-news{display:block;width:auto;border:solid 1px #ce2525;background:#FFF;height:40px;box-sizing:border-box;position:relative;line-height:40px;overflow:hidden;border-radius:2px;text-align:auto;font-size:14px} .bn-breaking-news *{box-sizing:border-box} .bn-breaking-news.bn-fixed-top{position:fixed;left:0;right:0;top:0} .bn-breaking-news.bn-fixed-bottom{position:fixed;left:0;right:0;bottom:0} .bn-label{left:0;top:0;bottom:0;height:100%;position:absolute;background-color:#ce2525;text-align:center;color:#FFF;font-weight:700;z-index:3;padding:0 15px;white-space:nowrap} .bn-news{position:absolute;left:0;top:0;bottom:0;height:100%;right:0;overflow:hidden;margin-left:10px;} .bn-news ul{display:block;height:100%;list-style:none;padding:0;margin:0;left:0;bottom:0;width:100%;position:absolute} .bn-news ul li{white-space:nowrap;overflow:hidden!important;text-overflow:ellipsis;text-decoration:none;-webkit-transition:color .2s linear;-moz-transition:color .2s linear;-o-transition:color .2s linear;transition:color .2s linear;position:absolute;width:100%;display:none;color:#333} .bn-news ul li a{white-space:nowrap;text-overflow:ellipsis;text-decoration:none;padding:0 10px;color:#333;position:relative;display:block;overflow:hidden; font-weight: bold;} .bn-news ul li a:hover{color:#069} .bn-loader-text{padding:0 10px} .bn-seperator{display:inline-block;float:left;margin-right:15px;width:30px;height:40px;background-position:center;background-size:contain;background-repeat:no-repeat;position:relative} .bn-seperator.bn-news-dot{margin-right:0} .bn-seperator.bn-news-dot:after{content:'';position:absolute;width:8px;height:8px;background:#333;border-radius:50%;top:50%;margin-top:-4px;left:50%;margin-left:-4px} .bn-prefix{color:#d65d7a;margin-right:15px;padding-left:10px} .bn-positive{color:#0b8457;font-weight:700} .bn-negative{color:#dc2f2f;font-weight:700} .bn-controls{width:auto;right:0;top:0;bottom:0;height:100%;position:absolute;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none} .bn-controls button{width:30px;float:left;height:100%;cursor:pointer;border:none;border-left:solid 1px #EEE;text-align:center;background-color:#f6f6f6;outline:none} .bn-controls button:hover{background-color:#EEE} .bn-arrow{margin:0;display:inline-block;height:8px;position:relative;width:8px;top:-2px} .bn-arrow::after{border-bottom-style:solid;border-bottom-width:2px;border-right-style:solid;border-right-width:2px;content:'';display:inline-block;height:8px;left:0;position:absolute;top:0;width:8px} .bn-arrow.bn-next{-moz-transform:rotate(315deg);-ms-transform:rotate(315deg);-webkit-transform:rotate(315deg);transform:rotate(315deg);left:-3px} .bn-arrow.bn-prev{-moz-transform:rotate(135deg);-ms-transform:rotate(135deg);-webkit-transform:rotate(135deg);transform:rotate(135deg);left:3px} .bn-arrow::after{border-color:#999} .bn-arrow::before{background-color:#999} .bn-play{position:relative;background:#999;width:0;height:12px;display:inline-block;margin-left:-5px} .bn-play::after{left:100%;top:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(136,183,213,0);border-left-color:#999;border-width:8px;margin-top:-8px} .bn-pause{position:relative;width:0;height:14px;display:inline-block;top:1px;left:-1px} .bn-pause::before{position:absolute;content:"";width:2px;height:100%;left:3px;background-color:#999} .bn-pause::after{position:absolute;content:"";width:2px;height:100%;left:-3px;background-color:#999} .bn-direction-rtl{direction:rtl} .bn-direction-rtl .bn-label{left:auto;right:0} .bn-direction-rtl .bn-controls{right:auto;left:0} .bn-direction-rtl .bn-seperator{margin-left:15px;margin-right:0;float:right} .bn-direction-rtl .bn-prefix{margin-left:15px;margin-right:0;padding-left:0;padding-right:10px} .bn-direction-rtl .bn-controls button{border-left:none;border-right:solid 1px #EEE} .bn-effect-scroll .bn-news ul{display:block;width:100%;position:relative} .bn-effect-scroll .bn-news ul li{display:list-item;float:left;position:relative;width:auto} .bn-effect-scroll.bn-direction-rtl .bn-news ul li{float:right} .tickerbox{width:100%;float:none;border:1px solid red;height:50px} #play_trigger,#pause_trigger{display:none} #ticker_container{margin-top:13px} #controls{margin-top:-3px} .icon{margin-right:5px;width:23px;height:24px} .break{background:#f2f2f2;font-family:'Roboto',sans-serif;width:100%} .redbreak{float:left;text-align:center;text-transform:uppercase;color:#fff;font-size:13px;font-weight:400;padding:10px 10px;line-height:16px;margin-right:10px;font-weight:700;background:-moz-linear-gradient(16deg,rgba(214,33,42,1) 0%,rgba(0,0,0,1) 100%);background:-webkit-gradient(linear,left top,right top,color-stop(0%,rgba(214,33,42,1)),color-stop(100%,rgba(0,0,0,1)));background:-webkit-linear-gradient(16deg,rgba(214,33,42,1) 0%,rgba(0,0,0,1) 100%);background:-o-linear-gradient(16deg,rgba(214,33,42,1) 0%,rgba(0,0,0,1) 100%);background:-ms-linear-gradient(16deg,rgba(214,33,42,1) 0%,rgba(0,0,0,1) 100%);background:linear-gradient(74deg,rgba(214,33,42,1) 0%,rgba(0,0,0,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6212a',endColorstr='#000000',GradientType=1)} .redbreak a{color:#fff} .redbreak span{font-size:14px;margin-top:3px;display:block} .break-content span{padding-right:20px} .break .center-section{margin:0 auto} #newsTicker1{border:0;border-radius:0!important;background:#f2f2f2;height: 35px !important;} .break { margin: 6px 0px 1px 0px; } .bn-news ul li{white-space:nowrap;overflow:hidden!important;text-overflow:ellipsis;text-decoration:none;-webkit-transition:color .2s linear;-moz-transition:color .2s linear;-o-transition:color .2s linear;transition:color .2s linear;position:absolute;width:100%;display:none;color:#333;font-weight: bold;padding-right: 30px;} .bn-news ul li a{white-space:nowrap;text-overflow:ellipsis;text-decoration:none;color:#333;position:relative;display:block;overflow:hidden;}
+/* Chart.js */ @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+{ "@context": "https://schema.org", "@type": "Organization", "name": "Zee News", "legalName" : "Zee Media Corporation Ltd", "url": "https://zeenews.india.com", "logo": "https://english.cdn.zeenews.com/images/logo/zeenewslogo_nav.png", "address": { "@type": "PostalAddress", "streetAddress": "Essel Studio FC-19 Film City", "addressLocality": "Sector 16A", "addressRegion": "Noida", "postalCode": "201301", "addressCountry": "India" }, "contactPoint": { "@type": "ContactPoint", "contactType": "customer support", "telephone": "[+91-0120-2511064]", "email": "inews@zeemedia.esselgroup.com" }, "sameAs": [ "https://www.facebook.com/ZeeNews", "https://twitter.com/ZeeNews" ]}
+{ "@context": "https://schema.org", "@graph": [ { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Home", "url": "https://zeenews.india.com" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Live TV", "url": "https://zeenews.india.com/live-tv" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Latest News", "url": "https://zeenews.india.com/latest-news" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "India", "url": "https://zeenews.india.com/india" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Videos", "url": "https://zeenews.india.com/video" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Entertainment", "url": "https://zeenews.india.com/entertainment" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Cricket", "url": "https://zeenews.india.com/cricket" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Photos", "url": "https://zeenews.india.com/photos" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Business", "url": "https://zeenews.india.com/business" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Bhojpuri", "url": "https://zeenews.india.com/bhojpuri" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "World", "url": "https://zeenews.india.com/world" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Technology", "url": "https://zeenews.india.com/technology" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Bollywood", "url": "https://zeenews.india.com/bollywood" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Economy", "url": "https://zeenews.india.com/economy" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "States", "url": "https://zeenews.india.com/state" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Top News", "url": "https://zeenews.india.com/top-news" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Sports", "url": "https://zeenews.india.com/sports" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Television", "url": "https://zeenews.india.com/television" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Horoscope", "url": "https://zeenews.india.com/horoscope" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "City", "url": "https://zeenews.india.com/city" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Mumbai", "url": "https://zeenews.india.com/mumbai" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Delhi NCR", "url": "https://zeenews.india.com/delhi" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Gujarat", "url": "https://zeenews.india.com/gujarat" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Bihar", "url": "https://zeenews.india.com/bihar" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Haryana", "url": "https://zeenews.india.com/haryana" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Jammu and Kashmir", "url": "https://zeenews.india.com/jammu-and-kashmir" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Kerala", "url": "https://zeenews.india.com/kerala" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Madhya Pradesh", "url": "https://zeenews.india.com/madhya-pradesh" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Maharashtra", "url": "https://zeenews.india.com/maharashtra" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Rajasthan", "url": "https://zeenews.india.com/rajasthan" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "Uttar Pradesh", "url": "https://zeenews.india.com/uttar-pradesh" }, { "@context": "https://schema.org", "@type":"SiteNavigationElement", "@id":"#table-of-contents", "name": "West Bengal", "url": "https://zeenews.india.com/west-bengal" } ] }
+.nav-f-block{background:#000;width:14%;padding:5px 0 5px 28px;float:left;height:55px} .nav-s-block{width:72%;float:left;padding:0 10px;height:55px;position:relative} .nav-t-block{width:14%;float:left} .col{float:left;width:14%;border-right:0 solid red} .col-state{width:30%!important} .sub-navigation{max-width:1366px;margin:auto;margin-bottom:0px;padding:10px 0} .sub-navigation ul{margin:0 0 20px;padding:0;list-style:none;padding-left:8px} .sub-navigation ul li{margin:0 0 5px;padding:0} .sub-navigation ul li a{color:#FFF} .sub-navigation a{font-size:13px} .sub-heading{margin:0 0 10px;padding:5px 10px;background:#343434;display:inline-block;color:#FFF} header,footer{font-family:'Roboto',sans-serif!important} .search{width:100%;position:relative;display:none;margin-top:5px} .input-search{float:left;width:100%;outline:none;border:0;border-radius:6px;padding:0 10px;z-index:1;box-sizing:border-box;font-size:16px;background:#cb111f;outline:none;color:#FFF;height:45px} .searchButton{position:absolute;right:0;width:80px;height:45px;background:#cb111f;text-align:center;color:#fff;border-radius:6px;cursor:pointer;font-size:16px;border:0;outline:none} .lang-section{background:#ededed;text-align:center;padding:5px 0;line-height:22px} .lang-section a{color:#535353;font-size:12px} .lang-section span{color:#535353;font-size:9px;vertical-align:middle} .lang-section span::after{content:"|";padding:0 8px} .lang-section span{color:#535353;font-size:9px} .text-center{text-align:center} .margin-auto{margin:auto} .top-ad{padding:5px 0} .social-block li:first-child{width:30px} .n-state{column-count:2} .nav-s-block a{color:#fff;font-size:12px;text-transform:capitalize;display:block;position:relative;text-decoration:none;height:55px;-webkit-transition:background .2s linear;-moz-transition:background .2s linear;-ms-transition:background .2s linear;-o-transition:background .2s linear;transition:background .2s linear;font-weight:700} .red-navigation{background:#e21727;height:55px;position:relative;z-index:9999;max-width:1366px;margin:auto} .head-bottom.page-header.fixed:before,.head-bottom:before{background:#000;height:55px;content:" ";width:50%;position:absolute;left:0;overflow:hidden;z-index:99} .head-bottom.page-header.fixed:after,.head-bottom:after{background:#e21727;height:55px;content:" ";width:100%;position:absolute;left:0;overflow:hidden;z-index:9;margin-top:-55px;border:1px solid red;visibility:inherit} .search-click{background:transparent;border:0;color:#FFF;font-size:16px;outline:none;padding:0} #nav-icon{width:22px;height:15px;position:relative;display:inline-table;vertical-align:middle;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;transition:.5s ease-in-out;cursor:pointer} #nav-icon span:nth-child(1){top:0} #nav-icon span:nth-child(2){top:7px} #nav-icon span:nth-child(3){top:14px} #nav-icon span{display:block;position:absolute;height:1px;width:100%;background:#fff;opacity:1;left:0;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out} .c-red{color:#e21828!important} .c-icon{margin-right:5px} .red-star{color:red!important;font-size:13px!important;vertical-align:super} .social-block{text-align:inherit} .social-block li{padding:16px 6px} .pd10{padding-top:10px} .navigation.desktop-menu-open,.top-footer{max-width:1366px;margin:auto} .top-footer{padding:10px 15px;border-top:1px solid #202020} .top-footer a{font-size:13px;color:#818181;vertical-align:bottom} .top-footer span{padding:0 10px;font-size:20px;color:#4f4f4f} .nav-s-block a{padding: 20px 5px!important;} .resmedtpnavlnk a{padding:5px 5px 0px 1px !important ;} @media (min-width: 1220px) and (max-width: 1362px) { .nav-s-block a{padding:20px 10px} } @media (min-width: 1180px) and (max-width: 1361px) { .nav-s-block a{padding:20px 12px} } @media (max-width: 1075px) { .nav-none3{display:none} } @media (max-width: 1180px) { .nav-none{display:none} .nav-s-block a{padding:20px 10px} } @media (min-width: 1363px) { .nav-s-block a{padding:20px 10px} } @media (min-width: 965px) and (max-width: 1150px) { .nav-f-block{width:16%} .nav-s-block{width:64%} .nav-t-block{width:20%} } @media (min-width: 768px) and (max-width: 964px) { .nav-s-block a{padding:20px 8px} .nav-none4{display:none} .nav-f-block{width:22%} .nav-s-block{width:55%} .nav-t-block{width:22%} } .zee-l{background:url(https://english.cdn.zeenews.com/images/logo/zeenewslogo_favico_32x32.png) no-repeat center center!important} .nav-reprt{padding:12px 0 12px 8px !important}
+हिन्दी मराठी বাংলা தமிழ் മലയാളം ગુજરાતી తెలుగు ಕನ್ನಡ ਪੰਜਾਬੀ
+Search
+Live TV
+Latest News
+Election 2022
+India
+Mobility
+Buzz
+Photos
+Business
+Entertainment
+People
+Cricket
+World
+States
+Viral News
+. . .
+Live TV
+Videos
+Photos
+Blogs
+Top News
+Latest News
+Entertainment
+Bollywood
+Television
+Music
+Regional
+Movie Reviews
+Hollywood
+Buzz
+Web Series
+Bhojpuri
+Lifestyle
+People
+Relationships
+Travel
+Food & Recipes
+Fashion
+Culture
+Horoscope
+Spirituality
+Sports
+Cricket
+Football
+Tennis
+Badminton
+Other Sports
+Technology
+Gadgets
+Mobiles
+Gaming
+Apps
+Internet & Social Media
+Budget 2022
+India
+City
+Mumbai
+Kolkata
+Pune
+Bengaluru
+Chennai
+Hyderabad
+Ahmedabad
+Gurugram
+Noida
+Ghaziabad
+Patna
+Bhopal
+Lucknow
+Jaipur
+Faridabad
+Kanpur
+Shimla
+States
+Andhra Pradesh
+Assam
+Bihar
+Chhattisgarh
+Delhi NCR
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+North East
+Odisha
+Punjab
+Rajasthan
+Tamil Nadu
+Telangana
+Uttar Pradesh
+Uttarakhand
+West Bengal
+UTs
+World
+Asia
+Africa
+Americas
+Europe
+Australia-Oceania
+Business
+Economy
+Markets
+Personal Finance
+Companies
+International Business
+Real Estate
+Bullion
+Automobile
+Science & Environment
+Space
+Environment
+Discoveries
+Science
+Health
+CONTACT. PRIVACY POLICY. LEGAL. COMPLAINT. OUR TEAM. INVESTOR INFO. ADVERTISE With Us. CAREERS. WHERE TO WATCH
+Breaking
+UP Election Result LIVE: Yogi govt to retain power? BJP leads in initial trends
+Punjab election result 2022 LIVE updates: AAP leads 39 seats in initial trends, Congress in 21
+Uttarakhand Election Result 2022 Live: BJP leading in 30 seats
+Goa, Manipur Assembly Election Result 2022 Live: BJP ahead in 12 seats in Goa in early trends
+Assembly election results 2022: CEC rules out allegations of EVM tampering, says 'counting is a transparent process'
+var chartdata; var labels = []; var totalseats; var language_key = ''; language_key = 'pcode'+language_key; var _data = []; function Populatemp(containername,totalseats , parties_data, language_key) { var total = 0; var newDataset = { backgroundColor: [], data: [], label: "elections-2022", }; chartdata = []; var mycolors = []; var labels = []; var key = ''; var sts = ''; Object.keys(parties_data.party).forEach(function(key) { party_key = parties_data.party[key][language_key]; sts = parties_data.party[key].totalseatswon; labels.push(party_key); newDataset.data.push(sts); total += parseInt(sts); newDataset.backgroundColor.push(parties_data.party[key].piecolor); }); newDataset.data.push(totalseats - total); newDataset.backgroundColor.push("#e5e6e5"); labels.push("Result Awaited"); drawchartpiemp(newDataset, containername, labels); } function drawchartpiemp(mycolors, container, labelsarray) { var config = { type: "doughnut", data: { datasets: [{ data: mycolors.data, backgroundColor: mycolors.backgroundColor, label: "Dataset 1" }], labels: labelsarray }, options: { responsive: true, legend: { display: false, position: "top", }, rotation: 1 * Math.PI, circumference: 1 * Math.PI, cutoutPercentage: 60, title: { display: false, text: "tally" }, animation: { animateScale: true, animateRotate: true } } }; var ctx = document.getElementById(container).getContext("2d"); window.myDoughnutmp = new Chart(ctx, config); }
+.blclinkColor {color: #000;} .redlinkColor {color:#ff0000} .benres21grapbox{width: 207px;} .benres21grapboxtext{bottom: -4px;} .benres21keyimg img {max-width: 85%;margin: auto;} .benres21_sp, .benres21_bsp, .benres21_mgp, .benres21_npf, .benres21_sad, .benres21_npep, .benres21_default{height: 4px; background: #E8E8E8;position: relative;} .benres21_sp span, .benres21_bsp span, .benres21_mgp span, .benres21_npf span, .benres21_sad span, .benres21_npep span, .benres21_default span{height: 4px;background: #39FF14; display: inline-block;position: absolute; } .benres21_sp span{background: #D71925;} .benres21_bsp span{background: #3018F0;} .benres21_mgp span{background: #3018F0;} .benres21_npf span{background: #FFFF09;} .benres21_sad span{background: #3018F0;} .benres21_npep span{background: #AE0000;} .benres21_aap span{background: #AE0000 !important;} .benres21_bjp span{background: #FF5D00 !important;} .benres21_oter span{background: #717171 !important;} .benres21_inc span{background: #00FEFC !important;} .upElecTpbx{border-bottom: 1px solid #707070; color: #707070;display: flex;margin: 0 0 20px 0;padding: 0;} .upElecTpbx li{list-style-type: none; margin-right: 35px;padding-bottom: 8px;} .upElecTpbx a{color: #707070;}.upElecTpbx a:hover{color: #000;text-decoration: none;} .upElecTpbx .active{border-bottom: 3px solid #D13332; color: #D13332;} .benres21grapboxtext{z-index:-1}
+Uttar Pradesh
+Uttarakhand
+Punjab
+Manipur
+Goa
+Uttar Pradesh
+403 / 403 Total Seats
+BJP+
+274
+SP+
+124
+BSP
+1
+CONG
+2
+OTH
+2
+_data[0] = JSON.parse('{"seats":"403","party":[{"order":"1","state_code":"09","state_name":"Uttar Pradesh","trcss":"","pdivcss":"bjp","spancss":"benres21_bjp","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#FF5D00","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:30px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/bjp.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/bjp.png","pcode":"BJP+","pcode_hin":"\u092c\u0940\u091c\u0947\u092a\u0940+","pcode_mar":"BJP+","pcode_ben":"BJP+","pcode_tam":"BJP+","pcode_mal":"BJP+","pcode_guj":"BJP+","pcode_tel":"BJP+","pcode_kan":"","trends":"20","trends_swing":"","statusTrendcss":"fa ","tally":"254","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"274"},{"order":"2","state_code":"09","state_name":"Uttar Pradesh","trcss":"","pdivcss":"sp","spancss":"benres21_sp","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#D71925","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/sp.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/sp.png","pcode":"SP+","pcode_hin":"\u090f\u0938\u092a\u0940+","pcode_mar":"SP+","pcode_ben":"SP+","pcode_tam":"SP+","pcode_mal":"SP+","pcode_guj":"SP+","pcode_tel":"SP+","pcode_kan":"","trends":"20","trends_swing":"","statusTrendcss":"fa ","tally":"104","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"124"},{"order":"3","state_code":"09","state_name":"Uttar Pradesh","trcss":"","pdivcss":"bsp","spancss":"benres21_bsp","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#3018F0","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/BSP.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/BSP.png","pcode":"BSP","pcode_hin":"\u092c\u0940\u090f\u0938\u092a\u0940","pcode_mar":"BSP","pcode_ben":"BSP","pcode_tam":"BSP","pcode_mal":"BSP","pcode_guj":"BSP","pcode_tel":"BSP","pcode_kan":"","trends":"1","trends_swing":"","statusTrendcss":"fa ","tally":"0","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"1"},{"order":"4","state_code":"09","state_name":"Uttar Pradesh","trcss":"","pdivcss":"inc","spancss":"benres21_inc","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#00FEFC","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/cong.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/cong.png","pcode":"CONG","pcode_hin":"\u0915\u093e\u0902\u0917\u094d\u0930\u0947\u0938","pcode_mar":"CONG","pcode_ben":"CONG","pcode_tam":"CONG","pcode_mal":"CONG","pcode_guj":"CONG","pcode_tel":"CONG","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"2","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"2"},{"order":"5","state_code":"09","state_name":"Uttar Pradesh","trcss":"","pdivcss":"oth","spancss":"benres21_oter","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#717171","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:25px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2021\/images\/others.svg","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2021\/images\/others.svg","pcode":"OTH","pcode_hin":"\u0905\u0928\u094d\u092f","pcode_mar":"OTH","pcode_ben":"OTH","pcode_tam":"OTH","pcode_mal":"OTH","pcode_guj":"OTH","pcode_tel":"OTH","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"2","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"2"}]}'); console.log(_data[0]); totalseats = _data[0].seats; Populatemp("chart-area-up",totalseats, _data[0], language_key);
+Uttarakhand
+70 / 70 Total Seats
+BJP
+48
+CONG
+18
+AAP
+0
+BSP
+2
+OTH
+2
+_data[1] = JSON.parse('{"seats":"70","party":[{"order":"1","state_code":"05","state_name":"Uttarakhand","trcss":"","pdivcss":"bjp","spancss":"benres21_bjp","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#FF5D00","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:30px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/bjp.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/bjp.png","pcode":"BJP","pcode_hin":"\u092c\u0940\u091c\u0947\u092a\u0940","pcode_mar":"BJP","pcode_ben":"BJP","pcode_tam":"BJP","pcode_mal":"BJP","pcode_guj":"BJP","pcode_tel":"BJP","pcode_kan":"","trends":"1","trends_swing":"","statusTrendcss":"fa ","tally":"47","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"48"},{"order":"2","state_code":"05","state_name":"Uttarakhand","trcss":"","pdivcss":"inc","spancss":"benres21_inc","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#00FEFC","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/cong.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/cong.png","pcode":"CONG","pcode_hin":"\u0915\u093e\u0902\u0917\u094d\u0930\u0947\u0938","pcode_mar":"CONG","pcode_ben":"CONG","pcode_tam":"CONG","pcode_mal":"CONG","pcode_guj":"CONG","pcode_tel":"CONG","pcode_kan":"","trends":"1","trends_swing":"","statusTrendcss":"fa ","tally":"17","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"18"},{"order":"3","state_code":"05","state_name":"Uttarakhand","trcss":"","pdivcss":"aap","spancss":"benres21_aap","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#AE0000","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/aap.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/aap.png","pcode":"AAP","pcode_hin":"\u090f\u090f\u092a\u0940","pcode_mar":"AAP","pcode_ben":"AAP","pcode_tam":"AAP","pcode_mal":"AAP","pcode_guj":"AAP","pcode_tel":"AAP","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"0","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"0"},{"order":"4","state_code":"05","state_name":"Uttarakhand","trcss":"","pdivcss":"bsp","spancss":"benres21_bsp","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#3018F0","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/BSP.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/BSP.png","pcode":"BSP","pcode_hin":"\u092c\u0940\u090f\u0938\u092a\u0940","pcode_mar":"BSP","pcode_ben":"BSP","pcode_tam":"BSP","pcode_mal":"BSP","pcode_guj":"BSP","pcode_tel":"BSP","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"2","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"2"},{"order":"5","state_code":"05","state_name":"Uttarakhand","trcss":"","pdivcss":"oth","spancss":"benres21_oter","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#717171","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:25px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2021\/images\/others.svg","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2021\/images\/others.svg","pcode":"OTH","pcode_hin":"\u0905\u0928\u094d\u092f","pcode_mar":"OTH","pcode_ben":"OTH","pcode_tam":"OTH","pcode_mal":"OTH","pcode_guj":"OTH","pcode_tel":"OTH","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"2","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"2"}]}'); console.log(_data[1]); totalseats = _data[1].seats; Populatemp("chart-area-uk",totalseats, _data[1], language_key);
+Punjab
+117 / 117 Total Seats
+CONG
+18
+SAD+
+4
+AAP
+92
+BJP+
+2
+OTH
+1
+_data[2] = JSON.parse('{"seats":"117","party":[{"order":"1","state_code":"03","state_name":"Punjab","trcss":"","pdivcss":"inc","spancss":"benres21_inc","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#00FEFC","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/cong.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/cong.png","pcode":"CONG","pcode_hin":"\u0915\u093e\u0902\u0917\u094d\u0930\u0947\u0938","pcode_mar":"CONG","pcode_ben":"CONG","pcode_tam":"CONG","pcode_mal":"CONG","pcode_guj":"CONG","pcode_tel":"CONG","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"18","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"18"},{"order":"2","state_code":"03","state_name":"Punjab","trcss":"","pdivcss":"sad","spancss":"benres21_sad","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#3018F0","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/SAD.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/SAD.png","pcode":"SAD+","pcode_hin":"\u090f\u0938\u090f\u0921\u0940+","pcode_mar":"SAD+","pcode_ben":"SAD+","pcode_tam":"SAD+","pcode_mal":"SAD+","pcode_guj":"SAD+","pcode_tel":"SAD+","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"4","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"4"},{"order":"3","state_code":"03","state_name":"Punjab","trcss":"","pdivcss":"aap","spancss":"benres21_aap","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#AE0000","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/aap.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/aap.png","pcode":"AAP","pcode_hin":"\u090f\u090f\u092a\u0940","pcode_mar":"AAP","pcode_ben":"AAP","pcode_tam":"AAP","pcode_mal":"AAP","pcode_guj":"AAP","pcode_tel":"AAP","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"92","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"92"},{"order":"4","state_code":"03","state_name":"Punjab","trcss":"","pdivcss":"bjp","spancss":"benres21_bjp","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#FF5D00","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:30px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/bjp.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/bjp.png","pcode":"BJP+","pcode_hin":"\u092c\u0940\u091c\u0947\u092a\u0940+","pcode_mar":"BJP+","pcode_ben":"BJP+","pcode_tam":"BJP+","pcode_mal":"BJP+","pcode_guj":"BJP+","pcode_tel":"BJP+","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"2","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"2"},{"order":"5","state_code":"03","state_name":"Punjab","trcss":"","pdivcss":"oth","spancss":"benres21_oter","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#717171","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:25px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2021\/images\/others.svg","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2021\/images\/others.svg","pcode":"OTH","pcode_hin":"\u0905\u0928\u094d\u092f","pcode_mar":"OTH","pcode_ben":"OTH","pcode_tam":"OTH","pcode_mal":"OTH","pcode_guj":"OTH","pcode_tel":"OTH","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"1","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"1"}]}'); console.log(_data[2]); totalseats = _data[2].seats; Populatemp("chart-area-pun",totalseats, _data[2], language_key);
+Manipur
+60 / 60 Total Seats
+BJP
+32
+CONG+
+5
+NPF
+5
+NPEP
+7
+OTH
+11
+_data[3] = JSON.parse('{"seats":"60","party":[{"order":"1","state_code":"14","state_name":"Manipur","trcss":"","pdivcss":"bjp","spancss":"benres21_bjp","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#FF5D00","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:30px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/bjp.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/bjp.png","pcode":"BJP","pcode_hin":"\u092c\u0940\u091c\u0947\u092a\u0940","pcode_mar":"BJP","pcode_ben":"BJP","pcode_tam":"BJP","pcode_mal":"BJP","pcode_guj":"BJP","pcode_tel":"BJP","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"32","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"32"},{"order":"2","state_code":"14","state_name":"Manipur","trcss":"","pdivcss":"inc","spancss":"benres21_inc","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#00FEFC","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/cong.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/cong.png","pcode":"CONG+","pcode_hin":"\u0915\u093e\u0902\u0917\u094d\u0930\u0947\u0938+","pcode_mar":"CONG+","pcode_ben":"CONG+","pcode_tam":"CONG+","pcode_mal":"CONG+","pcode_guj":"CONG+","pcode_tel":"CONG+","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"5","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"5"},{"order":"3","state_code":"14","state_name":"Manipur","trcss":"","pdivcss":"npf","spancss":"benres21_npf","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#FFFF09","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/NPF.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/NPF.png","pcode":"NPF","pcode_hin":"\u090f\u0928\u092a\u0940\u090f\u092b","pcode_mar":"NPF","pcode_ben":"NPF","pcode_tam":"NPF","pcode_mal":"NPF","pcode_guj":"NPF","pcode_tel":"NPF","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"5","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"5"},{"order":"4","state_code":"14","state_name":"Manipur","trcss":"","pdivcss":"npep","spancss":"benres21_npep","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#AE0000","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/NPEP.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/NPEP.png","pcode":"NPEP","pcode_hin":"\u090f\u0928\u092a\u0940\u092a\u0940","pcode_mar":"NPEP","pcode_ben":"NPEP","pcode_tam":"NPEP","pcode_mal":"NPEP","pcode_guj":"NPEP","pcode_tel":"NPEP","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"7","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"7"},{"order":"5","state_code":"14","state_name":"Manipur","trcss":"","pdivcss":"oth","spancss":"benres21_oter","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#717171","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:25px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2021\/images\/others.svg","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2021\/images\/others.svg","pcode":"OTH","pcode_hin":"\u0905\u0928\u094d\u092f","pcode_mar":"OTH","pcode_ben":"OTH","pcode_tam":"OTH","pcode_mal":"OTH","pcode_guj":"OTH","pcode_tel":"OTH","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"11","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"11"}]}'); console.log(_data[3]); totalseats = _data[3].seats; Populatemp("chart-area-man",totalseats, _data[3], language_key);
+Goa
+40 / 40 Total Seats
+BJP
+20
+CONG+
+12
+MGP+
+2
+AAP
+2
+OTH
+4
+_data[4] = JSON.parse('{"seats":"40","party":[{"order":"1","state_code":"30","state_name":"Goa","trcss":"","pdivcss":"bjp","spancss":"benres21_bjp","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#FF5D00","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:30px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/bjp.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/bjp.png","pcode":"BJP","pcode_hin":"\u092c\u0940\u091c\u0947\u092a\u0940","pcode_mar":"BJP","pcode_ben":"BJP","pcode_tam":"BJP","pcode_mal":"BJP","pcode_guj":"BJP","pcode_tel":"BJP","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"20","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"20"},{"order":"2","state_code":"30","state_name":"Goa","trcss":"","pdivcss":"inc","spancss":"benres21_inc","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#00FEFC","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/cong.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/cong.png","pcode":"CONG+","pcode_hin":"\u0915\u093e\u0902\u0917\u094d\u0930\u0947\u0938+","pcode_mar":"CONG+","pcode_ben":"CONG+","pcode_tam":"CONG+","pcode_mal":"CONG+","pcode_guj":"CONG+","pcode_tel":"CONG+","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"12","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"12"},{"order":"3","state_code":"30","state_name":"Goa","trcss":"","pdivcss":"mgp","spancss":"benres21_mgp","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#3018F0","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/MGP.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/MGP.png","pcode":"MGP+","pcode_hin":"\u090f\u092e\u091c\u0940\u092a\u0940+","pcode_mar":"MGP+","pcode_ben":"MGP+","pcode_tam":"MGP+","pcode_mal":"MGP+","pcode_guj":"MGP+","pcode_tel":"MGP+","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"2","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"2"},{"order":"4","state_code":"30","state_name":"Goa","trcss":"","pdivcss":"aap","spancss":"benres21_aap","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#AE0000","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:33px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/aap.png","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2022\/images\/aap.png","pcode":"AAP","pcode_hin":"\u090f\u090f\u092a\u0940","pcode_mar":"AAP","pcode_ben":"AAP","pcode_tam":"AAP","pcode_mal":"AAP","pcode_guj":"AAP","pcode_tel":"AAP","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"2","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"2"},{"order":"5","state_code":"30","state_name":"Goa","trcss":"","pdivcss":"oth","spancss":"benres21_oter","tdalign":"","trmobcss":"","tdothr":"","piecolor":"#717171","acss":"","allhcss":"","pbrtopm":"","spanmobcss":"","logoheight":"height:25px","logo":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2021\/images\/others.svg","logo_big":"https:\/\/english.cdn.zeenews.com\/assembly_election\/2021\/images\/others.svg","pcode":"OTH","pcode_hin":"\u0905\u0928\u094d\u092f","pcode_mar":"OTH","pcode_ben":"OTH","pcode_tam":"OTH","pcode_mal":"OTH","pcode_guj":"OTH","pcode_tel":"OTH","pcode_kan":"","trends":"0","trends_swing":"","statusTrendcss":"fa ","tally":"4","tally_swing":"0","statusTallycss":"fa ","totalseatswon":"4"}]}'); console.log(_data[4]); totalseats = _data[4].seats; Populatemp("chart-area-goa",totalseats, _data[4], language_key);
+Top Candidates
+Lost
+INC
+Harish Rawat
+Lalkuwa
+Lost
+BJP
+Pushkar Singh Dhami
+Khatima
+Lost
+BJP
+Suresh Kumar
+Thana Bhawan
+Lost
+BJP
+Sangeet Singh Som
+Sardhana
+Lost
+BJP
+Keshav Prasad Maurya
+Sirathu
+Lost
+INC
+Ajay Kumar Lallu
+Tamkuhi Raj
+Lost
+SP
+Swami Prasad Maurya
+Fazilnagar
+Won
+AAP
+Bhagwant Mann
+Dhuri
+Won
+BJP
+Madan Kaushik
+Hardwar
+Won
+BJP
+Satpal Maharaj
+Chaubattakhal
+Won
+SP
+Mohammad Azam Khan
+Rampur
+Won
+BJP
+Pankaj Singh
+Noida
+Won
+BJP
+Shrikant Sharma
+Mathura
+Won
+SP
+Akhilesh Yadav
+Karhal
+Won
+BJP
+Ashutosh Tandon Gopal Ji
+Lucknow East
+Won
+BJP
+Aditi Singh
+Rae Bareli
+Won
+SP
+Shivpal Singh Yadav
+Jaswantnagar
+Won
+JDLk
+Raghuraj Pratap Singh
+Kunda
+Won
+BJP
+Adityanath
+Gorakhpur Urban
+Won
+SBSP
+Om Prakash Rajbhar
+Zahoorabad
+Leading
+BJP
+Sidharth Nath Singh
+Allahabad West
+Lost
+INC
+Navjot Singh Sidhu
+Amritsar East
+Lost
+SAD
+Bikram Singh Majithia
+Amritsar East
+Lost
+INC
+Charanjit Singh Channi
+Chamkaur Sahib
+Lost
+SAD
+Sukhbir Singh Badal
+Jalalabad
+Lost
+SAD
+Parkash Singh Badal
+Lambi
+Lost
+PLCP
+Amarinder Singh
+Patiala
+Lost
+AAP
+Ajay Kothiyal
+Gangotri
+Lost
+INC
+Harish Rawat
+Lalkuwa
+Lost
+BJP
+Pushkar Singh Dhami
+Khatima
+Lost
+BJP
+Suresh Kumar
+Thana Bhawan
+Lost
+BJP
+Sangeet Singh Som
+Sardhana
+Lost
+BJP
+Keshav Prasad Maurya
+Sirathu
+Lost
+INC
+Ajay Kumar Lallu
+Tamkuhi Raj
+Lost
+SP
+Swami Prasad Maurya
+Fazilnagar
+Won
+AAP
+Bhagwant Mann
+Dhuri
+Won
+BJP
+Madan Kaushik
+Hardwar
+Won
+BJP
+Satpal Maharaj
+Chaubattakhal
+Won
+SP
+Mohammad Azam Khan
+Rampur
+Won
+BJP
+Pankaj Singh
+Noida
+Won
+BJP
+Shrikant Sharma
+Mathura
+Won
+SP
+Akhilesh Yadav
+Karhal
+PrevNext
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+document.addEventListener('DOMContentLoaded', function () { $('.biharcandidateslider').bxSlider({ minSlides: 2, maxSlides: 7, moveSlides: 1, controls: true, pager: true, slideWidth:245, auto: false }); });
+UP Election Results LIVE: Deputy CM Keshav Prasad Maurya loses to SP’s Pallavi Patel
+PM Narendra Modi victory speech: '...Holi begins from March 10'
+Saffron surge sweeps UP again, here's what BJP victory means under Yogi Adityanath
+Arvind Kejriwal's Punjab victory speech: 'It's Inquilab, Aam Aadmi has won, we will change politics'
+Punjab election result 2022 LIVE: AAP records landslide victory with 92 seats, Congress reduced to 18
+Goa, Manipur Election Result Live: BJP's wins Panaji seat, defeats Utpal Parrikar
+LIVE TV election coverage: We will form high-level committee to implement Uniform Civil Code: Dhami
+Dhoni's batting to RCB's new captain, 5 things to watch out for in IPL 2022
+India
+Amit Shah thanks voters, party workers for BJP's performance UP, Goa, Manipur and U'khand election 2022
+After Navjot Sidhu's loss, is Archana Puran Singh's seat in Kapil Sharma show under threat?
+Who is Pramod Sawant, BJP's CM face and winner from Goa's Sanquelim seat
+Who is Bhuwan Chandra Kapri? Know the man who beats Pushkar Singh Dhami, HERE
+Who is Ajit Pal Singh Kohli, the man who trounced Maharaja of Patiala?
+BJP all set to form govt in Manipur again; key factors behind the saffron surge in north-east
+Yogi Adityanath busts 'Noida jinx' after 30 years as BJP set to retain power in UP
+.coroupdatetable{height: 200px !important;} .dsclinkrgt{display:inline-block; text-align: right;margin:-34px 10px 0 0; padding:0 8px 0 8px; float: right; background:#fff; color: #000;} .zeenewsSponserdbox{background: #ffefef;} .zeenewsSponserLink{color:#ff0000;display: block;}
+PAK - AUS- 2nd Test Sat, 12 Mar 2022, 10:30 AM IST
+PAK
+AUS
+IND - SL- 2nd Test Sat, 12 Mar 2022, 14:00 PM IST
+IND
+SL
+BAN - AFG- 2nd T20
+BAN
+115/920
+AFG
+121/217.4
+Afghanistan beat Bangladesh by 8 wickets
+PAK - AUS- 1st Test
+PAK
+476/4162
+25277
+AUS
+459/10140.1
+Pakistan drew with Australia
+WI - ENG- 1st Test
+WI
+279/697.3
+ENG
+311/10100.3
+West Indies trail by 32 runs
+PAK - AUS- 2nd Test Sat, 12 Mar 2022, 10:30 AM IST
+PAK
+AUS
+IND - SL- 2nd Test Sat, 12 Mar 2022, 14:00 PM IST
+IND
+SL
+BAN - AFG- 2nd T20
+BAN
+115/920
+AFG
+121/217.4
+Afghanistan beat Bangladesh by 8 wickets
+PAK - AUS- 1st Test
+PAK
+476/4162
+25277
+AUS
+459/10140.1
+Pakistan drew with Australia
+WI - ENG- 1st Test
+WI
+279/697.3
+ENG
+311/10100.3
+West Indies trail by 32 runs
+PAK - AUS- 2nd Test Sat, 12 Mar 2022, 10:30 AM IST
+PAK
+AUS
+IND - SL- 2nd Test Sat, 12 Mar 2022, 14:00 PM IST
+IND
+SL
+BAN - AFG- 2nd T20
+BAN
+115/920
+AFG
+121/217.4
+Afghanistan beat Bangladesh by 8 wickets
+PrevNext
+Cricket|Sports
+PAK vs AUS: Big blow to PCB as ICC gives 'below average' rating to Rawalpindi pitch
+Adam Gilchrist reveals chat with Shane Warne eight hours before his death, check here
+David Warner feels run-out at non-striker's end a batter's fault
+India's Cheteshwar Pujara and Pakistan's Mohammad Rizwan to play together for THIS team
+PAK-W vs SA-W Women's World Cup 2022 Match Live Streaming and Broadcast
+Karim Benzema achieves THIS big feat in his 500th match for Real Madrid vs PSG
+WATCH: Tiger Woods' emotional speech after inducted into the World Golf Hall of Fame
+Chelsea owner Roman Abramovich's assets frozen by UK government, sale of club on hold
+World No.3 Alexander Zverev says he deserves to get banned if he repeats Mexico incident
+Russia-Ukraine war: World No. 1 Medvedev and Sabalenka call for peace
+Mobility
+Honda City Hybrid India launch soon, to get Honda Sensing Tech
+Tesla Model X Plaid delivered with misaligned tyres and body, details here
+Honda launches H’Ness CB350 and CB350RS with new colour options
+Ducati Scrambler 1100 Tribute PRO launches in India, priced at Rs 12.89 lakh
+Indian Railways restart services to provide bedrolls and blankets on trains
+Technology
+Apple iPhone SE 2022 goes on pre-order tomorrow: Check specs, price, features
+Realme 9 5G, Realme 9 5G SE with 30W charging launched in India: Price, specs, introductory offer
+Twitter tests changes to make image descriptions easier to access
+Last day of Xiaomi Smart Home Days sale: Check discounts, offers here
+How to verify fake news on WhatsApp? Check out these 10 numbers to seek info
+Entertainment
+Akshay Kumar, Emraan Hashmi-starrer 'Selfiee' goes on floors
+Aishwaryaa Rajinikanth returns to work after recovering from fever: Pics
+Lock Upp: Saisha Shinde confesses feelings for comedian Munawar, says 'it's painful'
+Are Shamita Shetty-Raqesh Bapat still dating? See actress' new post
+Kapil Sharma reacts to 'The Kashmir Files' director's claims on Twitter
+Videos
+04:54
+UP Election Results 2022 LIVE Updates: BJP's Shrikant Sharma leading from Mathura
+03:21
+UP Election Results 2022 LIVE Updates: SP's Azam Khan leading from Rampur
+02:33
+Election Result Live With Sudhir Chaudhary: CM Yogi leading by 14,000 votes in trends
+03:50
+Punjab Election Results 2022 LIVE Updates: Capt Amarinder Singh and Sidhu trails behind Majithia
+01:25
+Punjab Election Results 2022 LIVE Updates: AAP candidate Bhagwant Mann leading from Punjab
+.home-blog-content a{color:#333;} .view-display-id-block_2 img.img-responsive.qazy {border-radius:50%;width:106px;height:106px;margin-top:-50px;border:1px solid #929292;display:inline;}
+Featured News
+UP Election Result 2022: Analysing the issue of women's safety in Uttar Pradesh
+Will 'LOTAS' (turncoats) spell trouble for political parties in Punjab
+Voters seek viable alternatives amidst anti-incumbency wave in Punjab
+If voted to power, AAP will transform Punjab's ailing sports sector: Raghav Chadha tells Zee News
+Linking of Aadhaar Card to Voter ID - the merits and the concerns
+World
+Russia faces cyberwar as major internet providers suspend services
+Ukraine-Russia War: All that is happening right now - Sanctions, deaths & more
+War between China and Taiwan would end in "Miserable Victory", says Minister
+Russia-Ukraine crisis-related inflation may trigger protests and riots: World Bank
+Russia may use chemical weapons against Ukraine, warns White House
+Lifestyle
+Anushka Sharma shares special message for Jhulan Goswami on Instagram
+Aditya Narayan drops first photo of daughter, announces break from social media
+Here's why Big B's granddaughter Navya didn't choose acting as a career
+After Rakhi Sawant and Rahul Mahajan, singer Mika Singh gets his own 'swayamvar'
+Shraddha Kapoor gives a glimpse of her shoot day to fans!
+Business
+Bank credit grows by 7.9%; deposits by 8.6%: RBI Data
+Piyush Goyal meets French Minister for Foreign Trade; discusses boosting trade, investment
+Honda City Hybrid India launch soon, to get Honda Sensing Tech
+Post Office Scheme: Invest in THIS plan to get guaranteed monthly income
+Tesla Model X Plaid delivered with misaligned tyres and body, details here
+Photos
+Radhe Shyam: Pooja Hegde, Prabhas look stylish at film promotions, see pics
+5
+8
+In Pics: Volkswagen ID.Buzz all-electric microbus-based minivan unveiled
+6
+Urfi Javed goes topless, steps out wearing just chains and risque skirt: PHOTOS
+5
+Dhoni's batting to RCB's new captain, 5 things to watch out for in IPL 2022
+6
+Alia Bhatt, Ranbir Kapoor step out on a date night in Mumbai: Pics
+8
+Jennifer Winget holidays in snow-capped Kashmir, her vacay pics go viral!
+12
+Horoscope Today: Don’t take risks today, Sagittarians!
+5
+Sreesanth retires: Top 5 controversies cricketer was involved in
+6
+Kareena Kapoor slays in denim look, Mira Rajput clicked at salon with kids: PHOTOS
+Science
+National Science Day: PM Modi urges families to develop a scientific temperament in kids
+ISRO launches PSLV-C52 with earth observation and 2 small satellites - WATCH
+NASA's Mars orbiter finds water flowed on Red Planet longer than thought
+NASA`s James Webb Space Telescope reaches gravitational parking spot in solar orbit
+Exclusive: My work is to inspire team, support new ideas and make them a reality, says ISRO Chairman
+Health
+Covid vaccine prevents infection, severe disease in kidney dialysis patients
+White hair alert! Check out tips for preventing premature hair graying
+No Smoking Day: Quit smoking, reduce chances of cancer and stroke
+First menstrual period at younger age linked to chronic pain: Study
+Haircare Tips: 5 benefits of using Amla for long, strong and thick hair!
+Education
+NEET UG exam 2022: Govt removes upper age limit for NEET aspirants, details here
+CBSE Term 1 Result for Class 10, 12 this week at cbse.nic.in? Here's what we know
+UP Board Exam 2022: UPMSP announces Class 10th, 12th date sheet, check schedule
+UP Board Class 10th, 12th exam date sheet 2022 released, exams to start from March 24
+CBSE Class 10th, 12th Term 1 Result 2022 to be declared on cbse.nic.in, check important details here
+Bhojpuri
+Ravi Kishann, Pawan Singh-starrer 'Mera Bharat Mahan' trailer launch postponed
+Bigg Boss OTT fame Akshara Singh impresses in lime-green lehenga set: Pics
+Non-bailable warrant issued against Bhojpuri actor Khesari Lal Yadav
+Bhojpuri actress Neha Shree's Facebook page hacked, her unseen photos, videos go viral!
+Bhojpuri actress Neha Shree's FB page hacked, obscene content posted online
+हिन्दी
+BJP की बंपर जीत, लेकिन हार गए डिप्टी CM केशव प्रसाद मौर्य, सिराथू में सपा का जादू
+महाविजय के बाद PM मोदी बोले- अब ज्ञानी कहेंगे 22 ने तय किए 24 के नतीजे
+Punjab Election 2022 Result: कांग्रेस का दामन छोड़ कहीं के नहीं रहे कैप्टन! जानें उनकी हार की सबसे बड़ी वजह
+2 मौजूदा और 5 पूर्व मुख्यमंत्रियों ने हारी चुनावी बाजी, जानें कौन-कौन दिग्गज शामिल
+चुनावी नतीजों से BJP के पक्ष में बदल जाएगा राष्ट्रपति चुनाव का समीकरण? विशेषज्ञों ने समझाया
+मराठी
+Election Result 2022 : सर्वात छोटा विजय, भाजपचा हा उमेदवार फक्त 50 मतांनी विजयी
+भाजपच्या या उमेदवाराचा तब्बल 2.14 लाख मतांनी विजय, पाहा कोण आहे तो उमेदवार
+महाराष्ट्रातील या भागांमध्ये विजांच्या कडकडाटासह अवकाळी पावसाचा इशारा
+पाणी पुरवठ्याबाबत मोठी बातमी, मुंबईत या दिवशी पाणीपुरवठा बंद राहणार
+Goa निवडणुकीचे प्रभारी देवेंद्र फडणवीस याचं भाजपचे 106 आमदार उद्या असं करणार जंगी स्वागत
+বাংলা
+PM Narendra Modi On Election Win: `এই নির্বাচনই বুঝিয়ে দিয়েছে আগামীতে কী হবে`, UP জিতেই দিল্লি বিজয়ের সুর বাঁধলেন মোদী
+Yogi Adityanath: `ধর্মের রাজনীতি-যড়যন্ত্রের পাল্টা জবাব দিয়েছে মানুষ`: আদিত্যনাথ
+Punjab Assembly Election 2022 Result: পঞ্জাবের তখতে AAP, জয়ের পেছনে এই ৫ ফ্যাক্টর?
+PAKvsAUS: ICC-র রোষের মুখে Babar Azam-এর রাওয়ালপিন্ডির বাইশ গজ
+Jay Prakash Majumder: ধারে টিভি কিনে টাকা `মেটাননি`! দল বদলেই `বিপাকে` জয়প্রকাশ মজুমদার
+தமிழ்
+‘பாடம் கற்போம், தொடர்ந்து பாடுபடுவோம்’ - காங்கிரஸ்
+ஆபாசமாக வீடியோ எடுத்து தமிழ் நடிகை கத்தி முனையில் பாலியல் வன்புணர்வு
+உக்ரைனுக்கு புதுவிதமாக உதவும் பிரபல வெப்சைட்!
+’அந்த வாழ்க்கையை விரும்பவில்லை’ - சன்னிலியோனின் எமோஷ்னல் விளக்கம்
+India News| State News| World News| Sports News| Cricket News| Business News| Entertainment News| Technology News| Science News| Health News| Blogs| Photos| Video|
+TRENDING TOPICS
+Narendra ModiBollywood NewsBhojpuri VideosIndia News
+zee media websites
+hindi news bengali news marathi news tamil news malayalam news Gujarati News Telugu News Kannada News zeebiz wion dna Investor Info Advertise With Us
+© 1998-2022 Zee Media Corporation Ltd (An Essel Group Company), All rights reserved.
+follow us
+mobile apps
+|
+(function ($) { $(document).ready(function(){ $('ul.tabsae li').click(function(){ var tab_id = $(this).attr('data-tab'); $('ul.tabsae li').removeClass('current'); $('.tab-content').removeClass('current'); $(this).addClass('current'); $("#"+tab_id).addClass('current'); }); var pathelesa = location.pathname.substring(1); if (pathelesa) { $('.nav-aelegujbx li a[href$="' + pathelesa + '"]').parent().attr('class', 'ele-line'); } var pathindelemp = location.pathname.substring(1); if (pathindelemp) { $('.nav-aelegujbx li a[href$="' + pathindelemp + '"]').parent().attr('class', 'activeas'); } var pathge = location.pathname.substring(1); console.log("ge2019" + pathge); if (pathge) { $('.ge2019 li a[href$="' + pathge + '"]').attr('class', 'active'); } }); })(jQuery); function fillElementWithAd($el, slotCode, size, targeting){ if (typeof targeting === 'undefined') { targeting = {}; } else if ( Object.prototype.toString.call( targeting ) !== '[object Object]' ) { targeting = {}; } var elId = $el.attr('id'); googletag.cmd.push(function(){ var slot = googletag.defineSlot(slotCode, size, elId); for (var t in targeting){ slot.setTargeting(t, targeting[t]); } slot.addService(googletag.pubads()); googletag.display(elId); //googletag.pubads().refresh([slot]); }); } (function ($) { $(document).ready(function(){ var views_infinite_scroll_was_initialised = false; if($('ul.pagination').length < 1 && $('.next-story-block').length < 1){ views_infinite_scroll_was_initialised = true; } var maindiv = false; var dis = 0; if($.autopager){ if(!views_infinite_scroll_was_initialised) { views_infinite_scroll_was_initialised = true; $('h2.element-invisible').hide(); var use_ajax = false; if(!use_ajax) { var view_selector = 'div.content'; var content_selector = view_selector + ' > section.maincontent'; var items_selector = content_selector + ' > div'; var pager_selector = view_selector + ' > div.text-center > ul.pagination'; var next_selector = pager_selector + ' > li.last > a:last '; var auto_selector = view_selector + ' > div.text-center'; var img_location = view_selector + ' > section.maincontent > div:last'; var img_path = '<div class="loading-block text-center margin-bt50px">
+<div class="loading-text">Loading</div>
+<div class="zee-l">
+<svg height="100%" version="1.1" viewBox="0 0 98 98" width="100%">
+<circle class="ytp-svg-autoplay-circle" cx="49" cy="49" fill="" fill-opacity="0.7" r="48">
+</circle>
+<circle id="green-halo" cx="-49" cy="49" fill="none" r="46.5" stroke="#ff5050" stroke-dasharray="0,20000" stroke-dashoffset="0" stroke-width="1" transform="rotate(-90)">
+</circle>
+<text id="myTimer" text-anchor="middle" x="100" y="110">
+</text>
+</svg>
+</div>
+</div>'; //settings.img_path; var img = '<div id="views_infinite_scroll-ajax-loader">' + img_path + '</div>'; $(pager_selector).hide(); //console.log($(next_selector).attr('href')); var x = 0; var url = ''; var circle = ""; var myTimer = ""; var interval = 30; var angle = 0; var Inverval = ""; var angle_increment = 6; var prevLoc = $(location).attr('href'); var handle = $.autopager({ appendTo: content_selector, content: items_selector, runscroll: maindiv, link: next_selector, autoLoad: false, page: 0, start: function(){ $(img_location).after(img); circle = $('.content').find('#green-halo'); myTimer = $('.content').find('#myTimer'); angle = 0; Inverval = setInterval(function (){ console.log("angle:" + angle); $(circle).attr("stroke-dasharray", angle + ", 20000"); //myTimer.innerHTML = parseInt(angle/360*100) + '%'; if (angle >= 360) { angle = 1; } angle += angle_increment; }.bind(this),interval); }, load: function(){ $('div.loading-block').remove(); clearInterval(Inverval); $("span.zvd-parse").each(function(index) { con_zt = $(this).text(); var cls = $(this).attr('class').replace('zvd-parse', 'zvd'); $(this).html(parseDuration(con_zt)).removeAttr('class').attr('class', cls); }); /*$('.repeat-block > .row > div.main-rhs<php print $ni; > > div.rhs<php print $ni; >:first').clone().appendTo('.repeat-block >.row > div.main-rhs' + x); $('.center-section >.repeat-block:last').before('<div class="hor-ad margin-bt50px text-center margin-auto">
+<div id="ad-'+ x + '" class="dfp-ad">
+<img src="/sites/all/themes/zeemedia/templates/article2017/images/970.jpg" class="img-responsive margin-auto text-center">
+</div>
+</div>
+<div class="block text-center margin-bt50px margin-tp30px">
+<h2 class="next-s">अगली खबर</h2>
+</div>');*/ } }); $(window).scroll(function() { var last = $(auto_selector).filter(':last'); console.log("Last" + last); var lastHeight = last.offset(); console.log('lastHeight' + lastHeight); st = $(layout).scrollTop(); if((last.offset().top + last.height() - 500) < $(document).scrollTop() + $(window).height()){ //console.log("**get"); //console.log("x:" + x); handle.autopager('load'); setTimeout(function(){ //twttr.widgets.load(); //loadDisqus(jQuery(this), disqus_identifier, disqus_url); }, 6000); } }); var prev_content_height = $(content_selector).height(); //$(function() { var layout = $(content_selector); var st = 0; ///}); } } } //$(".sidebar").theiaStickySidebar(); }); })(jQuery); !function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js"); apstag.init({ pubID: "a17c03c1-eb0c-4671-8a5d-3cb93c8ca58e", adServer: "googletag" }); apstag.fetchBids({ slots: [ { slotID: "div-gpt-ad-1504525689817-0", sizes: [[728, 90], [970, 90]] }, { slotID: "div-gpt-ad-1504525689817-1", sizes: [[300, 250]] }, { slotID: "div-gpt-ad-1504525689817-2", sizes: [300, 250] }, { slotID: "div-gpt-ad-1504525689817-3", sizes: [[728, 90], [970, 90]] } ], timeout: 1000 // Make Sure this timeout is less than or equal to OpenWrap TimeOut }, function(bids) { googletag.cmd.push(function(){ apstag.setDisplayBids(); PWT.a9_BidsReceived = true; initAdserver(false); }); }); function on_load_google_ad(PWT){ googletag.cmd.push(function() { googletag.defineSlot('/11440465/Zeenews_English_Web/Zeenews_English_HP_ATF_970x90', [[728, 90], [970, 90]], 'div-gpt-ad-1504525689817-0').addService(googletag.pubads()); googletag.defineSlot('/11440465/Zeenews_English_Web/Zeenews_English_HP_ATF_300x250', [[300, 250]], 'div-gpt-ad-1504525689817-1').addService(googletag.pubads()); googletag.defineSlot('/11440465/Zeenews_English_Web/Zeenews_English_HP_BTF_1_300x250', [[300, 250]], 'div-gpt-ad-1504525689817-2').addService(googletag.pubads()); googletag.defineSlot('/11440465/Zeenews_English_Web/Zeenews_English_HP_BTF_970x90', [[728, 90], [970, 90]], 'div-gpt-ad-1504525689817-3').addService(googletag.pubads()); //googletag.defineSlot('/11440465/Zeenews_English_Web/Zeenews_English_HP_BTF_2_300x250', [[300, 250]], 'div-gpt-ad-1504525689817-4').addService(googletag.pubads()); googletag.defineSlot('/11440465/Zeenews_English_Web/Zeenews_English_HP_Strip', [1000, 60], 'div-gpt-ad-22279125212-0').addService(googletag.pubads()); googletag.pubads().setTargeting('category', ['Home']); googletag.pubads().disableInitialLoad(); googletag.pubads().enableLazyLoad({ fetchMarginPercent: 50, renderMarginPercent: 50, mobileScaling: 2.0 }); googletag.pubads().enableAsyncRendering(); googletag.pubads().set('page_url','https://zeenews.india.com/'); googletag.pubads().collapseEmptyDivs(); googletag.enableServices(); // OpenWrap code START here if(typeof PWT.requestBids === 'function'){ PWT.requestBids( PWT.generateConfForGPT(googletag.pubads().getSlots()), function(adUnitsArray) { PWT.addKeyValuePairsToGPTSlots(adUnitsArray); PWT.ow_BidsReceived = true; initAdserver(false); } ); } // No need to handle else part as we have A9 wrapper on page // OpenWrap code END here var FAILSAFE_TIMEOUT = 1000; // this timeout should be more than OpenWrap and A9 timeout setTimeout(function() { initAdserver(true); // calling this function with forced mode set to true so that GPT API is always executed }, FAILSAFE_TIMEOUT); }); googletag.cmd.push(function() { googletag.display('div-gpt-ad-1504525689817-0'); }); googletag.cmd.push(function() { googletag.display('div-gpt-ad-1504525689817-1'); }); googletag.cmd.push(function() { googletag.display('div-gpt-ad-1504525689817-2'); }); googletag.cmd.push(function() { googletag.display('div-gpt-ad-1504525689817-3'); }); //googletag.cmd.push(function() { googletag.display('div-gpt-ad-1504525689817-4'); }); googletag.cmd.push(function() { googletag.display('div-gpt-ad-22279125212-0'); }); } function on_load_taboola_ad(){ window._taboola = window._taboola || []; _taboola.push({home:'auto'}); !function (e, f, u, i) { if (!document.getElementById(i)){ e.async = 1; e.src = u; e.id = i; f.parentNode.insertBefore(e, f); } }(document.createElement('script'), document.getElementsByTagName('script')[0], '//cdn.taboola.com/libtrc/zeemedia-zeenews-english/loader.js', 'tb_loader_script'); if(window.performance && typeof window.performance.mark == 'function') {window.performance.mark('tbl_ic');} window._taboola = window._taboola || []; _taboola.push({ mode: 'thumbs-feed-01-b-4x1', container: 'taboola-below-homepage-thumbnails', placement: 'Below Homepage Thumbnails', target_type: 'mix' }); _taboola.push({flush: true}); } function on_load_fb_twitter_widgets(){ (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.defer = 'defer'; js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.defer = 'defer'; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, "script", "twitter-wjs")); } on_load_google_ad(PWT); setTimeout(function() { on_load_fb_twitter_widgets(); on_load_taboola_ad(); }, 8000); ! function() { var lotameClientId = '12375'; var lotameTagInput = { data: {}, config: { clientId: Number(lotameClientId) } }; // Lotame initialization var lotameConfig = lotameTagInput.config || {}; var namespace = window['lotame_' + lotameConfig.clientId] = {}; namespace.config = lotameConfig; namespace.data = lotameTagInput.data || {}; namespace.cmd = namespace.cmd || []; } (); window.lotame_12375.cmd.push(function() { window.lotame_12375.collect({ behaviors: { int: ['site:zeenews.india.com','English'], seg: ['Home'] }, }); }); 1
+@keyframes fade-in-up { 0%{opacity:0} 100%{transform:translateY(0);opacity:1} } @-webkit-keyframes ripple { 70%{box-shadow:0 0 0 50px rgba(255,0,0,0)} 100%{box-shadow:0 0 0 0 rgba(255,0,0,0)} } @keyframes ripple { 70%{box-shadow:0 0 0 50px rgba(255,0,231,0)} 100%{box-shadow:0 0 0 0 rgba(255,0,0,0)} } @-moz-keyframes ripple { 70%{box-shadow:0 0 0 50px rgba(255,0,0,0)} 100%{box-shadow:0 0 0 0 rgba(255,0,0,0)} } .fa-expand::before{content:"\f065"} .fa-arrows::before{content:"\f047"} .fa-close::before{content:"\f00d";} .video-wrap{text-align:center} .video-index iframe{max-width:100%;max-height:100%} .video-index{position:fixed;bottom:10px;right:10px;z-index:99999} #can-vd2{position:absolute;top:5px;left:5px;background:transparent;border:1px solid #575757;color:#FFF;font-size:16px;outline:none;padding:4px 6px} #livebtbox{position:fixed;bottom:150px;right:100px;display:none;z-index:99999;} #livedrag{position:absolute;} #live-bt{height:60px;width:60px;border-radius:50%;background-color:#f13030;color:#FFF;box-shadow:2px 2px 5px #888;text-align:center;font-weight:700;margin:0 auto;font-size:12px;z-index:9999} #live-bt a{text-decoration:none;color:#FFF;font-size:11px;line-height:60px;font-family:'Roboto',sans-serif;font-weight:700;display:block;cursor:pointer;} .circle-rippl,.circle-rippl::after,.circle-rippl::before{position:absolute;right:0px;bottom:0px;height:60px;width:60px;z-index:-1;border-radius:50%;box-shadow:0 0 0 0 rgba(255,0,0,.2);-webkit-animation:ripple 3s infinite;-moz-animation:ripple 3s infinite;-ms-animation:ripple 3s infinite;-o-animation:ripple 3s infinite;animation:ripple 3s infinite} .circle-rippl::after,.circle-rippl::before{content:"";position:absolute;top:0;right:0} .circle-rippl::after{-webkit-animation-delay:.6s;-moz-animation-delay:.6s;-ms-animation-delay:.6s;-o-animation-delay:.6s;animation-delay:.6s} #video-expand{position:absolute;top:5px;right:5px;background:transparent;border:1px solid #575757;color:#FFF;font-size:16px;outline:none;padding:3px 6px} .videomove{bottom:10px;right:10px;position:absolute;width:320px;height:240px;background:#000;border:1px solid #FFF;transform:translateY(100%);animation:fade-in-up .25s ease forwards;z-index:9999;-webkit-box-shadow:0 0 12px -1px rgba(0,0,0,0.42);-moz-box-shadow:0 0 12px -1px rgba(0,0,0,0.42);box-shadow:0 0 12px -1px rgba(0,0,0,0.42);}
+LIVE TV
+var _comscore = _comscore || []; _comscore.push({ c1: "2", c2: "9254297" }); (function () { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+window._izq = window._izq || []; window._izq.push(["init"]); window._izq.push(["register_callback",function(obj){if(obj.statuscode==1){window._izq.push(["userProfile",{"add":{"language":"English"}}]);}}]); (function ($) { $(document).ready(function(){ $( ".input-search" ).keypress(function( event ){ if ( event.which == 13 ) { location.href='/google?search=' + $(".input-search").val(); } }); $(".searchButton").click(function(){ location.href = '/google?search=' + $(".input-search").val(); }); /*window.timer = window.setInterval(function () { circle.setAttribute("stroke-dasharray", angle + ", 20000"); //myTimer.innerHTML = parseInt(angle/360*100) + '%'; if (angle >= 360) { window.clearInterval(window.timer); } angle += angle_increment; }.bind(this), interval);*/ });})(jQuery); $( document ).ready(function() { if($(".iplschedule").length){ $('.iplschedule').bxSlider({ captions: false, minSlides: 1, maxSlides: 4, slideWidth: 300, pager:false, touchEnabled: false, moveSlides:1, slideMargin: 40 }); } }); $( document ).ready(function() { $('.view-display-id-attachment_1 > div.view-content :nth-child(3)').addClass("mini-pad-l"); }); $(document).ready(function(){ if($('.bxsliderstate').length){ $('.bxsliderstate').bxSlider({ minSlides: 1, maxSlides: 1, moveSlides: 1, controls: true, pager: true, auto: true }); } if($('.videoslidergsp-col').length){ $('.videoslidergsp').bxSlider({ mode: 'horizontal', slideWidth: 280, touchEnabled: true, slideMargin: 22, maxSlides: 4, minSlides: 1, moveSlides: 1 }); } }); $(document).ready(function(){ if($('.bxsliderarticle').length){ $('.bxsliderarticle').bxSlider({ minSlides: 1, maxSlides: 3, moveSlides: 1, slideWidth: 640, mode: 'horizontal', controls: true, pager: false, auto: true, slideMargin:0 }); } if($('.bxsliderab').length){ $('.bxsliderab').bxSlider({ mode: 'horizontal', maxSlides: 1, pager: true, moveSlides: 1, controls:false, touchEnabled:true, controls:true }); } }); $(document).ready(function(){ if($('.slider .view-content').length) {slider = $('.slider .view-content').bxSlider({ mode: 'horizontal', maxSlides: 4, slideWidth: 296, slideMargin: 20, pager: false, moveSlides: 1, controls:false, touchEnabled:true });} }); function parseDuration(PT) { if(PT.length > 0) { var output = []; var durationInSec = 0; var matches = PT.match(/P(?:(\d*)Y)?(?:(\d*)M)?(?:(\d*)W)?(?:(\d*)D)?T(?:(\d*)H)?(?:(\d*)M)?(?:(\d*)S)?/i); var parts = [ { // years pos: 1, multiplier: 86400 * 365 }, { // months pos: 2, multiplier: 86400 * 30 }, { // weeks pos: 3, multiplier: 604800 }, { // days pos: 4, multiplier: 86400 }, { // hours pos: 5, multiplier: 3600 }, { // minutes pos: 6, multiplier: 60 }, { // seconds pos: 7, multiplier: 1 } ]; for (var i = 0; i < parts.length; i++) { if (typeof matches[parts[i].pos] != 'undefined') { durationInSec += parseInt(matches[parts[i].pos]) * parts[i].multiplier; } } // Hours extraction if (durationInSec > 3599) { output.push(parseInt(durationInSec / 3600)); durationInSec %= 3600; } // Minutes extraction with leading zero output.push(('0' + parseInt(durationInSec / 60)).slice(-2)); // Seconds extraction with leading zero output.push(('0' + durationInSec % 60).slice(-2)); return output.join(':'); } else { return ""; } }; $(document).ready(function(){ $("span.zvd-parse").each(function(index) { con_zt = $(this).text(); var cls = $(this).attr('class').replace('zvd-parse', 'zvd'); $(this).html(parseDuration(con_zt)).removeAttr('class').attr('class', cls); }); });
+.next-story-block{display:none!important;}
+$(document).ready(function(){ $('ul.score-tabs li').click(function(){ var tab_id = $(this).attr('data-tab'); $('ul.score-tabs li').removeClass('current'); $('.tab-content').removeClass('current'); $(this).addClass('current'); $("#"+tab_id).addClass('current'); }) })
+ul.score-tabs{margin:0;padding:0;list-style:none;border-bottom:1px solid #000;background:#000} ul.score-tabs li{background:#858585;color:#000;display:inline-block;padding:10px 14px;cursor:pointer;width:50%;float:left;text-align:center} ul.score-tabs li.current{background:#000;color:#FFF;margin-top:-3px;font-weight:700} .tab-content{display:none;background:#2f5abc;padding:0px;font-size:12px} .tab-content.current{display:inherit} .score-block{color:#aac4ff;line-height:22px} .tea{color:#ffea00;padding-left:5px} .tour-block{text-transform:uppercase;margin-bottom:6px;text-align:center} .team-white-txt{color:#FFF;font-size:15px;font-weight:700} .team-name{text-transform:uppercase;font-size:15px;color:#FFF;vertical-align:middle;font-weight:700} .team-map{margin-right:5px;box-shadow:0 0 10px 1px #5e5e5e} .score-date{text-align:center} .vs{font-size:11px;color:#FFF} .team1{margin-right:5px} .team2{margin-left:5px} .full-score{text-decoration:none;background-color:#294ea5;display:inline-block;cursor:pointer;color:#fff;font-size:11px;padding:1px 16px;text-decoration:none;text-shadow:0 1px 0 #112654;border-top-left-radius:10px;border-top-right-radius:10px;} .full-score:hover{background-color:#1f3e87;text-decoration:none;} .full-score:active{position:relative;top:1px} .score-but{padding-top:8px;} .score-line{padding-left:3px;padding-right:3px;} .score-result-txt{color:#FFF;font-size:11px;} .score-team-block{padding-top:12px;} .score-team-block:nth-child(2n+1){background: url(https://english.cdn.zeenews.com/images/shadow-cktcard.png) no-repeat top center;background-size:contain;border-bottom:1px solid #4269c2;} .score-team-block:nth-child(2n+2){background: url(https://english.cdn.zeenews.com/images/shadow-cktcard.png) no-repeat top center;background-size:contain;} .score-team-block tbody{border-top: 0px solid #ccc!important;} @media (min-width: 992px) and (max-width: 1152px) { .nav-s-block a {padding: 20px 6px !important;} } @media (min-width: 768px) and (max-width: 991px) { .nav-s-block a {padding: 20px 3px !important;} } @media (min-width: 1363px) { .nav-s-block a {padding: 20px 10px;} } @media (max-width: 1362px) and (min-width: 1220px) { .nav-s-block a { padding: 20px 10px; } } @media (min-width: 992px) and (max-width: 1152px) { .nav-s-block a { padding: 20px 6px !important; } } @media (min-width: 768px) and (max-width: 991px) { .nav-s-block a { padding: 20px 3px !important; } }
+/*var cb = function() { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = '/dev4.zeenews.com_app_min.css?v=1'; var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h); }; var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame; if (raf) raf(cb); else window.addEventListener('load', cb);*/ (function ($) { $(document).ready(function(){ function fillElementWithNativeAd($elN, slotCodeN, sizeN, targetingN){ if (typeof targetingN === 'undefined') { targetingN = {}; } else if ( Object.prototype.toString.call( targetingN ) !== '[object Object]' ) { targetingN = {}; } var elIdN = $elN.attr('id'); //console.log("elId:" + elId); googletag.cmd.push(function(){ var slotN = googletag.defineSlot(slotCodeN, sizeN, elIdN); for (var tN in targetingN){ slotN.setTargeting(tN, targetingN[tN]); } slotN.addService(googletag.pubads()); googletag.display(elIdN); //googletag.pubads().refresh([slotN]); googletag.pubads().enableSingleRequest(); googletag.pubads().collapseEmptyDivs(); googletag.enableServices(); }); } //var dN = $('<div id="div-hp-native1">
+</div>'); //$(".mini-lead-block > .row > .view-id-zn_hp_mc_lead_news_2018 > .view-content > .mini-pad-l > .mini-list-story").replaceWith(dN); //fillElementWithNativeAd(dN, '/11440465/Zeenews_English_Web/Zeenews_English_HP_Native1', [[300, 100], 'fluid'], {}); }); })(jQuery);
+By continuing to use the site, you agree to the use of cookies. You can find out more by clicking this link
+Close
+.co-container{background:#000;position:fixed;bottom:0;width:100%;z-index:9999} .co-block{padding:20px 15px;max-width:1366px;margin:auto;text-align:center} .co-block p{color:#999;display:inline-block;padding-right:20px} .co-block p a{color:#0c80ed} .co-close{text-align:center;background:#0c80ed;color:#FFF;padding:5px 20px;text-decoration:none;border-radius:5px;display:inline-block} .co-close:hover{text-decoration: none;} .modal{display:none;position:fixed;z-index:1;padding-top:100px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,0.4);z-index: 1000002;} .modal-content{position:relative;background-color:#fefefe;margin:auto;padding:0;border:1px solid #888;max-width:1100px;box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);-webkit-animation-name:animatetop;-webkit-animation-duration:.4s;animation-name:animatetop;animation-duration:.4s} @-webkit-keyframes animatetop { from{top:-300px;opacity:0} to{top:0;opacity:1} } @keyframes animatetop { from{top:-300px;opacity:0} to{top:0;opacity:1} } .close{color:#fff;float:right;font-size:28px;font-weight:700;padding: 10px;} .close:hover,.close:focus{color:#000;text-decoration:none;cursor:pointer} .modal-header { padding: 15px; background-color: #f44336; color: #fff; font-size: 24px; } .modal-body{padding:2px 16px} .modal-footer { padding: 15px; background-color: #f44336; color: #fff; } #mymodal header h2 { font-size: 20px; }
+$(function() { $(document).ready(function(){ var ccontainer = document.getElementById('co-container'); var btn = document.getElementById("myBtn"); var myClsBtn = document.getElementById("myCloseBtn"); gdpr_is_europe = 0; function checkCookieValues(){ console.log("GDPRFlag: " + localStorage.getItem('gdprFlag')); if(gdpr_is_europe == 1){ //console.log("GDPRFlag: " + localStorage.getItem('gdprFlag')); if (localStorage.getItem('gdprFlag') != '1'){ ccontainer.style.display = "block"; }else{ ccontainer.style.display = "none"; } }else{ localStorage.setItem('gdprFlag', '1'); } } function setCookieValues(){ localStorage.setItem('gdprFlag', '1'); checkCookieValues(); } $(btn).click(function(){ setCookieValues(); }); $(myClsBtn).click(function(){ setCookieValues(); ccontainer.style.display = "none"; }); checkCookieValues(); }); }) window._taboola = window._taboola || []; _taboola.push({flush: true}); $(document).ready(function(){ $('#livedrag').draggable({cancel: "#live-bt a"}); $("#live-bt a").on('touchstart click', function() { $(location).attr('href', '/live-tv'); }); }); $(document).ready(function(){ $('#newsTicker1').breakingNews(); });
